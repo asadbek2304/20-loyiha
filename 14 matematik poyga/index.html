@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tezkor matematika</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Tezkor matematika</h1>
+        </div>
+
+        <div class="card" id="splash-page">
+            <form id="start-form">
+                <div class="selection-container">
+                    <div class="radio-container">
+                        <label for="value-10">10 ta savol</label>
+                        <input type="radio" name="questions" value="10" id="value-10">
+                        <span class="best-score">
+                            <span>Eng yaxshi natija</span>
+                            <span class="best-score-value"></span>
+                        </span>
+                    </div>
+                    <div class="radio-container">
+                        <label for="value-25">25 ta savol</label>
+                        <input type="radio" name="questions" value="25" id="value-25">
+                        <span class="best-score">
+                            <span>Eng yaxshi natija</span>
+                            <span class="best-score-value"></span>
+                        </span>
+                    </div>
+                    <div class="radio-container">
+                        <label for="value-50">50 ta savol</label>
+                        <input type="radio" name="questions" value="50" id="value-50">
+                        <span class="best-score">
+                            <span>Eng yaxshi natija</span>
+                            <span class="best-score-value"></span>
+                        </span>
+                    </div>
+                    <div class="radio-container ">
+                        <label for="value-99">99 ta savol</label>
+                        <input type="radio" name="questions" value="99" id="value-99">
+                        <span class="best-score">
+                            <span>Eng yaxshi natija</span>
+                            <span class="best-score-value"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="selection-footer">
+                    <button class="start" type="submit">Boshlash</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="card" id="countdown-page" hidden>
+            <h1 class="countdown"></h1>
+        </div>
+
+        <div class="card" id="game-page" hidden>
+            <div class="item-container"></div>
+            <div class="item-footer">
+                <button class="wrong" onclick="select(false)">Notog'ri</button>
+                <button class="right" onclick="select(true)">Tog'ri</button>
+            </div>
+        </div>
+
+        <div class="card" id="score-page" hidden>
+            <div class="score-container">
+                <h1 class="title">Sizning natijangiz</h1>
+                <h1 class="final-time"></h1>
+                <h1 class="base-time"></h1>
+                <h1 class="penalty-time"></h1>
+            </div>
+            <div class="score-footer">
+                <button class="play-again" onclick="playAgain()" hidden>Qayta boshlash</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="randomArr.js"></script>
+</body>
+</html>

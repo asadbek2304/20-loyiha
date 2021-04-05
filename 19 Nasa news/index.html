@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA News</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="loader hidden">
+        <img src="rocket.svg" alt="Loading animation">
+    </div>
+    <div class="container">
+        <div class="navigation-container">
+            <span class="background"></span>
+            <span class="navigation-items" id="resultsNav">
+                <h3 class="clickable" onclick="updateDom('favorites')">Sevimlilar</h3>
+                <h3>&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;</h3>
+                <h3 class="clickable" onclick="getNasaPictures()">Ko'proq yuklash</h3>
+            </span>
+            <span class="navigation-items hidden" id="favoritesNav">
+                <h3 class="clickable" onclick="getNasaPictures()">Ko'proq yuklash</h3>
+            </span>
+        </div>
+        <div class="images-container"></div>
+    </div>
+    <div class="save-confirmed" hidden>
+        <h1>Qo'shildi!</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

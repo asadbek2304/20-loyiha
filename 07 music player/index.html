@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="img/myLogo.webp" type="image/x-icon">
+</head>
+<body>
+    <div class="player-container">
+        <div class="img-container">
+            <img src="img/aaa1.jpg" alt="Album art">
+        </div>
+        <h2 id="title">Lola</h2>
+        <h3 id="artist">Hamdam Sobirov</h3>
+        <audio src="music/aaa1.mp3"></audio>
+
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time"></span>
+                <span id="duration"></span>
+            </div>
+        </div>
+
+        <div class="player-controls">
+            <i class="fas fa-backward" id="prev" title="Oldingi"></i>
+            <i class="fas fa-play main-button" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Keyingi"></i>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

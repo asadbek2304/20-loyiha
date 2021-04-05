@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAYMER</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+      <video class="video-background" loop muted autoplay>
+          <source src="time.mp4">
+      </video>
+
+      <div class="container">
+          <div class="input-container" id="input-container" >
+              <h1>O'zingizni taymeringgizni qo'shing!</h1>
+              
+              <form class="form" id="countdownForm">
+                  <label for="title">Nom</label>
+                  <input type="text" id="title" placeholder="Qaysi sanaga taymer qo'ymoqchisiz">
+                  <label for="data-picker">Sanani tanlang</label>
+                  <input type="date" id="data-picker">
+                  <button type="submit">Yaratish</button>
+              </form>
+          </div>
+
+          <div class="countdown" id="countdown" hidden>
+              <h1 id="countdown-title"></h1>
+              <ul>
+                  <li><span></span>Kun</li>
+                  <li><span></span>Soat</li>
+                  <li><span></span>Daqiqa</li>
+                  <li><span></span>Soniya</li>
+              </ul>
+              <button id="countdown-button">Qayta o'rnatish</button>
+          </div>
+
+          <div class="complete" id="complete" hidden>
+              <h1 class="complete-title">Taymer tugadi!</h1>
+              <h1 id="complete-info"></h1>
+              <button id="complete-button">Yangi taymer</button>
+          </div>
+      </div>
+
+      <div class="video-overlay"></div>
+  </body>
+</html>
